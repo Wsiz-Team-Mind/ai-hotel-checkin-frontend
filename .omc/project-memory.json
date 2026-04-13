@@ -1,0 +1,357 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776082033863,
+  "projectRoot": "/Users/s10wn/Projects/ai-hotel-checkin-frontend",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "19.2.4",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.4",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "8.0.1",
+        "category": "build"
+      }
+    ],
+    "packageManager": "yarn",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "yarn build",
+    "testCommand": null,
+    "lintCommand": "yarn lint",
+    "devCommand": "yarn dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc -b && vite build",
+      "lint": "eslint .",
+      "lint:fix": "eslint . --fix",
+      "format": "prettier --write .",
+      "preview": "vite preview"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "feature-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 3,
+      "lastAccessed": 1776082033845,
+      "keyFiles": [
+        "favicon.svg",
+        "icons.svg",
+        "index.html"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 2,
+      "lastAccessed": 1776082033848,
+      "keyFiles": [
+        "favicon.svg",
+        "icons.svg"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 2,
+      "lastAccessed": 1776082033849,
+      "keyFiles": [
+        "index.scss",
+        "main.tsx"
+      ]
+    },
+    "dist/assets": {
+      "path": "dist/assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1776082033849,
+      "keyFiles": [
+        "index-BVsNH_2R.css",
+        "index-ZEzlvQyF.js"
+      ]
+    },
+    "src/app": {
+      "path": "src/app",
+      "purpose": "Application code",
+      "fileCount": 4,
+      "lastAccessed": 1776082033849,
+      "keyFiles": [
+        "App.tsx",
+        "AppLayout.tsx",
+        "AppRouter.tsx"
+      ]
+    },
+    "src/assets": {
+      "path": "src/assets",
+      "purpose": "Static assets",
+      "fileCount": 3,
+      "lastAccessed": 1776082033849,
+      "keyFiles": [
+        "hero.png",
+        "react.svg",
+        "vite.svg"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 0,
+      "lastAccessed": 1776082033849,
+      "keyFiles": []
+    },
+    "src/pages": {
+      "path": "src/pages",
+      "purpose": "Page components",
+      "fileCount": 0,
+      "lastAccessed": 1776082033850,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/app/AppRouter.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1776082365796,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/index.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776082341749,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/AdminDashboardPage/AdminDashboardPage.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776082355981,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/AdminDashboardPage/AdminDashboardPage.module.scss",
+      "accessCount": 2,
+      "lastAccessed": 1776082357949,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/AdminLayout/AdminLayout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776088552221,
+      "type": "file"
+    },
+    {
+      "path": "src/app/AppLayout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776088552714,
+      "type": "file"
+    },
+    {
+      "path": "src/index.scss",
+      "accessCount": 2,
+      "lastAccessed": 1776088563629,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1776082240690,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/AdminStaffPage/AdminStaffPage.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776082257419,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/HomePage/index.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776082258229,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/styles/variables.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776082259044,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Button/Button.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776082262087,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Button/Button.module.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776082262914,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Button/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082263283,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/AdminStaffPage/AdminStaffPage.module.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776082265360,
+      "type": "file"
+    },
+    {
+      "path": "tsconfig.json",
+      "accessCount": 1,
+      "lastAccessed": 1776082266127,
+      "type": "file"
+    },
+    {
+      "path": "tsconfig.app.json",
+      "accessCount": 1,
+      "lastAccessed": 1776082266483,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/api/ApiError.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082283628,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/api/apiClient.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082296277,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/api/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082297725,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Spinner/Spinner.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776082301663,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Spinner/Spinner.module.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776082306248,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Spinner/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082306977,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/ErrorMessage/ErrorMessage.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776082313921,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/ErrorMessage/ErrorMessage.module.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776082318127,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/ErrorMessage/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082319284,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/ErrorBoundary/ErrorBoundary.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1776082324628,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/ErrorBoundary/ErrorBoundary.module.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776082326134,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/ErrorBoundary/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082326898,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/lib/hooks/useApi.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082334985,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/lib/hooks/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776082335395,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/AdminLayout/AdminLayout.module.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776088530213,
+      "type": "file"
+    },
+    {
+      "path": "src/app/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776088552863,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

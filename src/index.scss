@@ -136,6 +136,23 @@ code {
   color: var(--accent);
 }
 
+.app-nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+  position: relative;
+}
+
+.app-nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
 .app-main {
   flex: 1;
   padding: 24px;

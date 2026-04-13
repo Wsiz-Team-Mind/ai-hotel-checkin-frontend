@@ -1,0 +1,7 @@
+{
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/s10wn/Projects/ai-hotel-checkin-frontend/src/shared/lib/store\"}",
+  "error": "EISDIR: illegal operation on a directory, read '/Users/s10wn/Projects/ai-hotel-checkin-frontend/src/shared/lib/store'",
+  "timestamp": "2026-04-13T12:11:04.141Z",
+  "retry_count": 1
+}
