@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1776082033863,
+  "lastScanned": 1776261283573,
   "projectRoot": "/Users/s10wn/Projects/ai-hotel-checkin-frontend",
   "techStack": {
     "languages": [
@@ -79,7 +79,7 @@
       "path": "dist",
       "purpose": "Distribution/build output",
       "fileCount": 3,
-      "lastAccessed": 1776082033845,
+      "lastAccessed": 1776261283559,
       "keyFiles": [
         "favicon.svg",
         "icons.svg",
@@ -90,7 +90,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 2,
-      "lastAccessed": 1776082033848,
+      "lastAccessed": 1776261283561,
       "keyFiles": [
         "favicon.svg",
         "icons.svg"
@@ -100,7 +100,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1776082033849,
+      "lastAccessed": 1776261283561,
       "keyFiles": [
         "index.scss",
         "main.tsx"
@@ -110,17 +110,17 @@
       "path": "dist/assets",
       "purpose": "Static assets",
       "fileCount": 2,
-      "lastAccessed": 1776082033849,
+      "lastAccessed": 1776261283562,
       "keyFiles": [
-        "index-BVsNH_2R.css",
-        "index-ZEzlvQyF.js"
+        "index-BU3GHLkx.js",
+        "index-DXShXat2.css"
       ]
     },
     "src/app": {
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 4,
-      "lastAccessed": 1776082033849,
+      "lastAccessed": 1776261283562,
       "keyFiles": [
         "App.tsx",
         "AppLayout.tsx",
@@ -131,7 +131,7 @@
       "path": "src/assets",
       "purpose": "Static assets",
       "fileCount": 3,
-      "lastAccessed": 1776082033849,
+      "lastAccessed": 1776261283562,
       "keyFiles": [
         "hero.png",
         "react.svg",
@@ -142,106 +142,226 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 0,
-      "lastAccessed": 1776082033849,
+      "lastAccessed": 1776261283562,
       "keyFiles": []
     },
     "src/pages": {
       "path": "src/pages",
       "purpose": "Page components",
       "fileCount": 0,
-      "lastAccessed": 1776082033850,
+      "lastAccessed": 1776261283562,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
       "path": "src/app/AppRouter.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1776082365796,
-      "type": "file"
-    },
-    {
-      "path": "src/shared/ui/index.ts",
-      "accessCount": 2,
-      "lastAccessed": 1776082341749,
-      "type": "file"
-    },
-    {
-      "path": "src/pages/AdminDashboardPage/AdminDashboardPage.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1776082355981,
-      "type": "file"
-    },
-    {
-      "path": "src/pages/AdminDashboardPage/AdminDashboardPage.module.scss",
-      "accessCount": 2,
-      "lastAccessed": 1776082357949,
+      "accessCount": 9,
+      "lastAccessed": 1776261640208,
       "type": "file"
     },
     {
       "path": "src/pages/AdminLayout/AdminLayout.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1776088552221,
+      "accessCount": 8,
+      "lastAccessed": 1776263132195,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/api/apiClient.ts",
+      "accessCount": 7,
+      "lastAccessed": 1776261564552,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/AdminLayout/AdminLayout.module.scss",
+      "accessCount": 7,
+      "lastAccessed": 1776263135322,
       "type": "file"
     },
     {
       "path": "src/app/AppLayout.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1776088552714,
+      "accessCount": 6,
+      "lastAccessed": 1776262770947,
       "type": "file"
     },
     {
-      "path": "src/index.scss",
-      "accessCount": 2,
-      "lastAccessed": 1776088563629,
+      "path": "src/pages/AdminDashboardPage/AdminDashboardPage.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1776262875062,
       "type": "file"
     },
     {
-      "path": "package.json",
-      "accessCount": 1,
-      "lastAccessed": 1776082240690,
+      "path": "src/pages/AdminDashboardPage/AdminDashboardPage.module.scss",
+      "accessCount": 5,
+      "lastAccessed": 1776262875422,
       "type": "file"
     },
     {
       "path": "src/pages/AdminStaffPage/AdminStaffPage.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1776082257419,
+      "accessCount": 5,
+      "lastAccessed": 1776264076466,
+      "type": "file"
+    },
+    {
+      "path": "src/pages/AdminStaffPage/AdminStaffPage.module.scss",
+      "accessCount": 5,
+      "lastAccessed": 1776264093063,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/index.ts",
+      "accessCount": 4,
+      "lastAccessed": 1776261514593,
+      "type": "file"
+    },
+    {
+      "path": "src/features/guest-login/ui/GuestLoginForm.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1776261515631,
+      "type": "file"
+    },
+    {
+      "path": "src/index.scss",
+      "accessCount": 4,
+      "lastAccessed": 1776262255250,
       "type": "file"
     },
     {
       "path": "src/pages/HomePage/index.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1776082258229,
+      "accessCount": 4,
+      "lastAccessed": 1776262794833,
+      "type": "file"
+    },
+    {
+      "path": "src/entities/booking/api/bookingApi.ts",
+      "accessCount": 3,
+      "lastAccessed": 1776261510711,
+      "type": "file"
+    },
+    {
+      "path": "src/entities/booking/model/types.ts",
+      "accessCount": 3,
+      "lastAccessed": 1776261511178,
+      "type": "file"
+    },
+    {
+      "path": "src/entities/booking/index.ts",
+      "accessCount": 3,
+      "lastAccessed": 1776261511952,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Input/Input.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1776261513660,
+      "type": "file"
+    },
+    {
+      "path": "src/features/guest-login/index.ts",
+      "accessCount": 3,
+      "lastAccessed": 1776261515819,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/api/index.ts",
+      "accessCount": 3,
+      "lastAccessed": 1776261568318,
       "type": "file"
     },
     {
       "path": "src/shared/styles/variables.scss",
-      "accessCount": 1,
-      "lastAccessed": 1776082259044,
-      "type": "file"
-    },
-    {
-      "path": "src/shared/ui/Button/Button.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1776082262087,
+      "accessCount": 3,
+      "lastAccessed": 1776262256416,
       "type": "file"
     },
     {
       "path": "src/shared/ui/Button/Button.module.scss",
-      "accessCount": 1,
-      "lastAccessed": 1776082262914,
+      "accessCount": 3,
+      "lastAccessed": 1776262269206,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Input/Input.module.scss",
+      "accessCount": 3,
+      "lastAccessed": 1776262274230,
+      "type": "file"
+    },
+    {
+      "path": "src/entities/checkin/index.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776119714036,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/api/ApiError.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776119716504,
+      "type": "file"
+    },
+    {
+      "path": "src/entities/checkin/api/checkinApi.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776119723977,
+      "type": "file"
+    },
+    {
+      "path": "src/entities/checkin/model/types.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776119724753,
+      "type": "file"
+    },
+    {
+      "path": "src/features/checkin-personal-data/ui/PersonalDataForm.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776119725893,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Stepper/Stepper.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776119727813,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 2,
+      "lastAccessed": 1776261499545,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/lib/hooks/useApi.ts",
+      "accessCount": 2,
+      "lastAccessed": 1776261512461,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Button/Button.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776261514517,
+      "type": "file"
+    },
+    {
+      "path": "src/features/guest-login/ui/GuestLoginForm.module.scss",
+      "accessCount": 2,
+      "lastAccessed": 1776261578552,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/ErrorMessage/ErrorMessage.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776264054800,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Spinner/Spinner.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1776264055303,
       "type": "file"
     },
     {
       "path": "src/shared/ui/Button/index.ts",
       "accessCount": 1,
       "lastAccessed": 1776082263283,
-      "type": "file"
-    },
-    {
-      "path": "src/pages/AdminStaffPage/AdminStaffPage.module.scss",
-      "accessCount": 1,
-      "lastAccessed": 1776082265360,
       "type": "file"
     },
     {
@@ -257,30 +377,6 @@
       "type": "file"
     },
     {
-      "path": "src/shared/api/ApiError.ts",
-      "accessCount": 1,
-      "lastAccessed": 1776082283628,
-      "type": "file"
-    },
-    {
-      "path": "src/shared/api/apiClient.ts",
-      "accessCount": 1,
-      "lastAccessed": 1776082296277,
-      "type": "file"
-    },
-    {
-      "path": "src/shared/api/index.ts",
-      "accessCount": 1,
-      "lastAccessed": 1776082297725,
-      "type": "file"
-    },
-    {
-      "path": "src/shared/ui/Spinner/Spinner.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1776082301663,
-      "type": "file"
-    },
-    {
       "path": "src/shared/ui/Spinner/Spinner.module.scss",
       "accessCount": 1,
       "lastAccessed": 1776082306248,
@@ -290,12 +386,6 @@
       "path": "src/shared/ui/Spinner/index.ts",
       "accessCount": 1,
       "lastAccessed": 1776082306977,
-      "type": "file"
-    },
-    {
-      "path": "src/shared/ui/ErrorMessage/ErrorMessage.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1776082313921,
       "type": "file"
     },
     {
@@ -329,27 +419,39 @@
       "type": "file"
     },
     {
-      "path": "src/shared/lib/hooks/useApi.ts",
-      "accessCount": 1,
-      "lastAccessed": 1776082334985,
-      "type": "file"
-    },
-    {
       "path": "src/shared/lib/hooks/index.ts",
       "accessCount": 1,
       "lastAccessed": 1776082335395,
       "type": "file"
     },
     {
-      "path": "src/pages/AdminLayout/AdminLayout.module.scss",
-      "accessCount": 1,
-      "lastAccessed": 1776088530213,
-      "type": "file"
-    },
-    {
       "path": "src/app/index.ts",
       "accessCount": 1,
       "lastAccessed": 1776088552863,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Input/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776119511859,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Stepper/Stepper.module.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776119523159,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/Stepper/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1776119524009,
+      "type": "file"
+    },
+    {
+      "path": "src/features/checkin-personal-data/ui/PersonalDataForm.module.scss",
+      "accessCount": 1,
+      "lastAccessed": 1776119559026,
       "type": "file"
     }
   ],

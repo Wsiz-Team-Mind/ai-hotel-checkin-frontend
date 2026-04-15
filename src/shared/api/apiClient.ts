@@ -4,13 +4,25 @@ export interface ApiRequestOptions extends Omit<RequestInit, 'body'> {
   body?: unknown;
   timeoutMs?: number;
   baseUrl?: string;
+  auth?: boolean;
+}
+
+type TokenProvider = () => string | null;
+
+let tokenProvider: TokenProvider | null = null;
+
+export function setAuthTokenProvider(provider: TokenProvider | null): void {
+  tokenProvider = provider;
 }
 
 const DEFAULT_TIMEOUT_MS = 15_000;
 
+const DEV_API_BASE_URL = 'http://localhost:3020';
+
 function resolveUrl(path: string, baseUrl?: string): string {
   if (/^https?:\/\//i.test(path)) return path;
-  const base = baseUrl ?? import.meta.env.VITE_API_BASE_URL ?? '';
+  const envBase = import.meta.env.VITE_API_BASE_URL as string | undefined;
+  const base = baseUrl ?? envBase ?? (import.meta.env.DEV ? DEV_API_BASE_URL : '');
   if (!base) return path;
   return `${base.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 }
@@ -45,7 +57,7 @@ function extractServerMessage(payload: unknown, fallback: string): string {
 }
 
 export async function apiRequest<T>(path: string, options: ApiRequestOptions = {}): Promise<T> {
-  const { body, timeoutMs = DEFAULT_TIMEOUT_MS, baseUrl, headers, signal, ...rest } = options;
+  const { body, timeoutMs = DEFAULT_TIMEOUT_MS, baseUrl, headers, signal, auth = true, ...rest } = options;
 
   const controller = new AbortController();
   const timeoutId = window.setTimeout(() => controller.abort(), timeoutMs);
@@ -54,11 +66,14 @@ export async function apiRequest<T>(path: string, options: ApiRequestOptions = {
     else signal.addEventListener('abort', () => controller.abort(), { once: true });
   }
 
+  const token = auth && tokenProvider ? tokenProvider() : null;
+
   const init: RequestInit = {
     ...rest,
     headers: {
       Accept: 'application/json',
       ...(body !== undefined ? { 'Content-Type': 'application/json' } : {}),
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
       ...headers,
     },
     body: body !== undefined ? JSON.stringify(body) : undefined,
