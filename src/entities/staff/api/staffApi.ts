@@ -92,6 +92,10 @@ export async function registerStaff(input: RegisterStaffInput, signal?: AbortSig
   return normalizeAuthResponse(raw, signal);
 }
 
+export function createStaff(input: RegisterStaffInput, signal?: AbortSignal) {
+  return apiClient.post<Staff>('/staff/register', input, { signal });
+}
+
 export async function loginStaff(input: LoginStaffInput, signal?: AbortSignal) {
   const raw = await apiClient.post<StaffAuthRawResponse>('/staff/login', input, {
     signal,

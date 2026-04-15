@@ -42,15 +42,6 @@ const BookingsIcon = (
   </svg>
 );
 
-const KioskIcon = (
-  <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path
-      d="M4 4h16v12H4V4zm2 2v8h12V6H6zm3 14h6v-2H9v2z"
-      fill="currentColor"
-    />
-  </svg>
-);
-
 const NAV_SECTIONS: ReadonlyArray<NavSection> = [
   {
     label: 'Overview',
@@ -58,10 +49,7 @@ const NAV_SECTIONS: ReadonlyArray<NavSection> = [
   },
   {
     label: 'Operations',
-    items: [
-      { to: '/admin/bookings', label: 'Bookings', icon: BookingsIcon },
-      { to: '/admin/kiosk', label: 'Kiosk', icon: KioskIcon },
-    ],
+    items: [{ to: '/admin/bookings', label: 'Bookings', icon: BookingsIcon }],
   },
   {
     label: 'Team',
@@ -73,7 +61,6 @@ const PAGE_TITLES: Record<string, { title: string; subtitle: string }> = {
   '/admin': { title: 'Dashboard', subtitle: 'Live overview of your property.' },
   '/admin/staff': { title: 'Staff', subtitle: 'Manage members, roles and access.' },
   '/admin/bookings': { title: 'Bookings', subtitle: 'All reservations in one place.' },
-  '/admin/kiosk': { title: 'Kiosk', subtitle: 'Guest self check-in activity.' },
 };
 
 function getInitials(name: string | undefined): string {
@@ -185,7 +172,6 @@ export function AdminLayout() {
               className={styles.searchInput}
               aria-label="Search"
             />
-            <kbd className={styles.kbd}>⌘K</kbd>
           </div>
 
           <div className={styles.topbarActions}>
@@ -197,15 +183,6 @@ export function AdminLayout() {
                 />
               </svg>
               <span className={styles.badge} aria-hidden="true" />
-            </button>
-            <button type="button" className={styles.primaryButton}>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6V5z"
-                  fill="currentColor"
-                />
-              </svg>
-              Invite staff
             </button>
           </div>
         </header>

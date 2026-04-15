@@ -225,13 +225,19 @@
 }
 
 .actionsCell {
-  width: 40px;
+  width: 72px;
   text-align: right;
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
 }
 
 .rowAction {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -240,13 +246,81 @@
   border-radius: 6px;
   color: var(--text-muted);
   cursor: pointer;
-  font-size: 18px;
-  line-height: 1;
+  padding: 0;
   transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
 
   &:hover {
     background: var(--surface-alt);
     border-color: var(--border);
+    color: var(--text-strong);
+  }
+}
+
+.rowActionDanger {
+  &:hover {
+    color: var(--danger);
+    background: color-mix(in srgb, var(--danger) 8%, transparent);
+    border-color: color-mix(in srgb, var(--danger) 20%, transparent);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.fieldLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-strong);
+}
+
+.select {
+  font: inherit;
+  font-size: 14px;
+  padding: 11px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text-strong);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: var(--brand);
+    box-shadow: 0 0 0 3px var(--brand-ring);
+  }
+}
+
+.formError {
+  font-size: 13px;
+  color: var(--danger);
+  margin: 0;
+}
+
+.confirmText {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+
+  strong {
     color: var(--text-strong);
   }
 }

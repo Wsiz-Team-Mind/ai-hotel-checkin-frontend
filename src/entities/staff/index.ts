@@ -9,6 +9,7 @@ export type {
   UpdateStaffInput,
 } from './model/types';
 export {
+  createStaff,
   deleteStaff,
   getAllStaff,
   getStaffById,
